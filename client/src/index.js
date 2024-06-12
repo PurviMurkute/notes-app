@@ -7,7 +7,7 @@ import NewNote from './views/NewNote/NewNote';
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />
   },
   {
