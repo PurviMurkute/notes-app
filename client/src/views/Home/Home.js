@@ -6,7 +6,7 @@ function Home() {
     const [Notes, setNotes] = useState([]);
 
     const loadNotes = async()=>{
-        const responce = await axios.get('http://localhost:5000/notes');
+        const responce = await axios.get(`${process.env.REACT_APP_API_URL}/notes`);
 
         console.log(responce.data.data);
 
@@ -16,7 +16,7 @@ function Home() {
     useEffect(()=>{
         loadNotes();
     }, [])
-    
+
   return (
     <div>
         <h1>Home</h1>
