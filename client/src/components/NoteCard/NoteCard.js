@@ -22,6 +22,7 @@ function NoteCard({ _id, title, content, category, loadNotes }) {
         <img src={UpdateIcon} alt='update-icon' className='update-icon me-4' />
       </Link>
     </div>
+
   )
 }
 
