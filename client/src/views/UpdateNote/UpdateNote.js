@@ -66,7 +66,7 @@ function UpdateNote() {
 
         <button
           type='button'
-          //onClick={}
+          onClick={updateNote}
           className='button-save bg-black text-white fs-5 py-1 px-4 rounded-pill'
         >
           Update
